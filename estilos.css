@@ -1,0 +1,105 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #172033;
+}
+
+/* Centrar el calendario */
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Tarjeta del calendario */
+.calendario {
+    width: 340px;
+    max-width: 100%;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #dce3ed;
+    border-radius: 16px;
+}
+
+/* Título */
+.calendario h1 {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+/* Campo de fecha */
+.campo-fecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Encabezado del mes */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.encabezado h2 {
+    font-size: 17px;
+}
+
+.encabezado button {
+    background-color: white;
+    border: 1px solid #dce3ed;
+    border-radius: 6px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+/* Cuadrícula de los días */
+.dias-semana,
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.dias-semana {
+    margin-bottom: 10px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dias span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 34px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+/* Espacios antes del día 1 */
+.dias .vacio {
+    min-height: 34px;
+}
+
+/* Día seleccionado */
+.dias .seleccionado {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+}
